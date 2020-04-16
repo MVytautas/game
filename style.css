@@ -1,0 +1,68 @@
+:root {
+  --color:tomato;
+  --height:100px;
+  /* --border-radius:35px; */
+}
+
+#puz, #puzz {
+  position:absolute;
+  top:25%;
+  left:17%;
+  transform:rotate(90deg);
+  width:300px;
+  height:var(--height);
+  /* border-radius:var(--border-radius); */
+  border:3px dashed lightgray;  
+  white-space:nowrap;
+  user-select:none;
+}
+#puzz {
+  position:absolute;
+  top:25%;
+  left:50%;
+  transform:translate(-50%,100%);
+  border:0;
+}
+
+#puz i {
+  float:left;
+  width:100px;
+  height:var(--height);
+}
+
+#puzz i {
+  display:inline-block;
+  width:100px;
+  height:var(--height);
+  background:var(--color);
+  background-image:var(--image);
+  background-size:300px 300px;
+  cursor:move;
+}
+.first {
+  border-top-left-radius:var(--border-radius);
+  border-bottom-left-radius:var(--border-radius);
+  background-position:left center !important;
+}
+.secon {
+  background-position:center center !important;
+}
+.third {
+  border-top-right-radius:var(--border-radius);
+  border-bottom-right-radius:var(--border-radius);
+  background-position:right center !important;
+}
+
+.dropped {
+  background:var(--color);
+  background-image:var(--image);
+  background-size:300px 300px;
+}
+.done {
+  opacity:0;
+  pointer-events:none;
+}
+
+@keyframes allDone {
+  50% { transform:rotate(90deg) scale(1.2); }
+}
