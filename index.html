@@ -1,27 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Plazmides game</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+<!-- 
+  <img src="c.jpg" class="center" width="500" height="500" > -->
 
-  <img src="c.jpg" class="center" width="500" height="500" >
+  <!-- <div class="popup" onclick="myFunction()">
+    <span class="popuptext" id="myPopup">A Simple Popup!</span> -->
+  
+  <body>
+    
+    <!-- <p>main content 
+      <a href="javascript:void(0)" 
+      onclick="document.getElementById('light').style.display='block';
+      document.getElementById('fade').style.display='block'">here</a>
+    </p> -->
+    <a href="javascript:void(0)" 
+    onclick="document.getElementById('light').style.display='block';
+    document.getElementById('fade').style.display='block'">
+    <i class="letter c"></i>
+    </a>
+    
+    <div id="light" class="white_content">This is plazmide 
+      <a href="javascript:void(0)" 
+      onclick="document.getElementById('light').style.display='none';
+      document.getElementById('fade').style.display='none'">Close</a>
+    </div>
+    <div id="fade" class="black_overlay"></div>
+  </body>
+<!-- 
+</div> -->
 
   <div id='puz'>
-    <i class='first' ondrop='drop(event)' ondragover='allowDrop(event)'>placeholder1</i>
-    <i class='secon' ondrop='drop(event)' ondragover='allowDrop(event)'>placeholder2</i>
-    <i class='third' ondrop='drop(event)' ondragover='allowDrop(event)'>placeholder3</i>
+    <i class='first' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+    <i class='secon' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+    <i class='third' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
   </div>
 
   <div id='puzz'>
-    <i class='first' draggable='true' ondragstart='drag(event)'><p>Pavadinimas1</p></i>
-    <i class='secon' draggable='true' ondragstart='drag(event)'><p>Pavadinimas2</p></i>
-    <i class='third' draggable='true' ondragstart='drag(event)'><p>Pavadinimas3</p></i>
+
+    <a href="javascript:void(0)" 
+    onclick="document.getElementById('a_light').style.display='block';
+    document.getElementById('a_fade').style.display='block'">
+    <i class='first' draggable='true' ondragstart='drag(event)'><p>A</p></i>
+    </a>
     
+    <a href="javascript:void(0)" 
+    onclick="document.getElementById('b_light').style.display='block';
+    document.getElementById('b_fade').style.display='block'">
+    <i class='secon' draggable='true' ondragstart='drag(event)'><p>B</p></i>
+    </a>
     
+    <a href="javascript:void(0)" 
+    onclick="document.getElementById('c_light').style.display='block';
+    document.getElementById('c_fade').style.display='block'">
+    <i class='third' draggable='true' ondragstart='drag(event)'><p>C</p></i>
+    </a>
+
+    <!-- A model -->
+    <div id="a_light" class="white_content">A text 
+      <a href="javascript:void(0)" 
+      onclick="document.getElementById('a_light').style.display='none';
+      document.getElementById('a_fade').style.display='none'">Close</a>
+    </div>
+    <div id="a_fade" class="black_overlay"></div>
+
+    <!-- B model -->
+    <div id="b_light" class="white_content">B text 
+      <a href="javascript:void(0)" 
+      onclick="document.getElementById('b_light').style.display='none';
+      document.getElementById('b_fade').style.display='none'">Close</a>
+    </div>
+    <div id="b_fade" class="black_overlay"></div>
+
+    <!-- C model -->
+    <div id="c_light" class="white_content">C text 
+      <a href="javascript:void(0)" 
+      onclick="document.getElementById('c_light').style.display='none';
+      document.getElementById('c_fade').style.display='none'">Close</a>
+    </div>
+    <div id="c_fade" class="black_overlay"></div>
+  
+
   </div>
+
 
   <div id="myDIV">
     <h2 class="finish"></h2>

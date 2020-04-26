@@ -2,7 +2,7 @@ function color() {
   let root = document.documentElement
   root.style.setProperty('--color', "hsl("+Math.floor(Math.random()*360)+"deg,50%,50%)");  
 }
-color()
+//color()
 
 function allowDrop(ev) {
   ev.preventDefault();
@@ -29,4 +29,9 @@ function drop(ev) {
 
     }    
   }  
+}
+
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
 }
