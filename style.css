@@ -5,12 +5,12 @@
 }
 
 #puz, #puzz {
-  position:absolute;
-  top:25%;
-  left:20%;
-  transform:rotate(90deg);
-  width:300px;
-  height:var(--height);
+   position:absolute;
+  top:15%;
+  left:23%;/*
+  transform:rotate(90deg); */
+  width:var(--height);
+  height:300px;
   /* border-radius:var(--border-radius); */
   border:3px dashed lightgray;  
   white-space:nowrap;
@@ -19,8 +19,8 @@
 #puzz {
   position:absolute;
   top:25%;
-  left:60%;
-  transform:translate(-50%,100%);
+  left:60%; /* 
+  transform:translate(-50%,100%); */
   border:0;
 }
 
@@ -65,9 +65,9 @@
   pointer-events:none;
 }
 
-@keyframes allDone {
-  50% { transform:rotate(90deg) scale(1.2); }
-}
+/* @keyframes allDone {
+  50% { transform:translate(-50%,100%) scale(1.2); }
+} */
 
 .letter {
   border-color: #556 !important; 
