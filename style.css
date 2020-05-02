@@ -132,6 +132,15 @@
   overflow: auto;
 }
 
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 /* .popup {
   position: relative;
   display: inline-block;
